@@ -75,16 +75,16 @@ func main() {
 	// Initial slice
 	s := []int{1, 2, 3}
 	fmt.Println("Initial slice:")
-	fmt.Printf("len(s) = %d, cap(s) = %d\n", len(s), cap(s)) // len=3, cap=3
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 
 	// Append more elements
 	s = append(s, 4, 5, 6)
 	fmt.Println("\nAfter appending elements:")
-	fmt.Printf("len(s) = %d, cap(s) = %d\n", len(s), cap(s)) // len=6, cap=6 or more
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 
 	s = s[:0]
 	fmt.Println("\nSlice the slice to give it zero length:")
-	fmt.Printf("len(s) = %d, cap(s) = %d\n", len(s), cap(s)) // len=6, cap=6 or more
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 
 	// Re-slice
 	//	s = s[2:]
@@ -92,43 +92,52 @@ func main() {
 	// s = s[:10]
 
 	// Re-slice
-	s = s[:6]
+	s = s[2:5]
 	fmt.Println("\nAfter re-slicing:")
-	fmt.Printf("len(s) = %d, cap(s) = %d\n", len(s), cap(s)) // len=3, cap=6
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+
+	// get extra element from array
+	s = s[:4]
+	fmt.Println("\nget extra element from array")
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 
 	// Drop its first two values.
 	s = s[2:]
 	fmt.Println("\nDrop its first two values")
-	fmt.Printf("len(s) = %d, cap(s) = %d\n", len(s), cap(s)) // len=1, cap=6
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 
 	// Nil slice
 	var t []int
 	fmt.Println("\nNil slice:")
-	fmt.Printf("len(t) = %d, cap(t) = %d\n", len(t), cap(t)) // len=0, cap=0
+	fmt.Printf("len(t) = %d, cap(t) = %d\n", len(t), cap(t))
 
 	// Create a slice with length 0 and capacity 5
 	t = make([]int, 0, 5)
 	fmt.Println("\nZero-length slice with capacity:")
-	fmt.Printf("len(t) = %d, cap(t) = %d\n", len(t), cap(t)) // len=0, cap=5
+	fmt.Printf("len(t) = %d, cap(t) = %d\n", len(t), cap(t))
 }
+
 ```
 
 ### Output:
 ```text
 Initial slice:
-len(s) = 3, cap(s) = 3
+len=3 cap=3 [1 2 3]
 
 After appending elements:
-len(s) = 6, cap(s) = 6
+len=6 cap=6 [1 2 3 4 5 6]
 
 Slice the slice to give it zero length:
-len(s) = 0, cap(s) = 6
+len=0 cap=6 []
 
 After re-slicing:
-len(s) = 6, cap(s) = 6
+len=3 cap=4 [3 4 5]
+
+get extra element from array
+len=4 cap=4 [3 4 5 6]
 
 Drop its first two values
-len(s) = 4, cap(s) = 4
+len=2 cap=2 [5 6]
 
 Nil slice:
 len(t) = 0, cap(t) = 0
