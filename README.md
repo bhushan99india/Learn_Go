@@ -23,6 +23,14 @@ LinkedIn Videos to further ramp up:
                 https://www.linkedin.com/learning/secure-coding-in-go![image](https://github.com/user-attachments/assets/2d406943-d26b-41bf-873f-164b7ab288fb)
 ```
 
+# Go Programming Concepts
+
+### Click here to view all Programming Concepts in go.[Concepts](/go_concepts.md)
+
+# Go Interview question
+
+### Click here to view all Interview question in go.[Concepts](/go_concepts.md)
+
 ### Interview question 
 ### **Question 1: Difference between array and slice**
 
