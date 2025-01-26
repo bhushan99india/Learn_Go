@@ -96,6 +96,9 @@ func main() {
 	fmt.Println("\nAfter re-slicing:")
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 
+	//panic: runtime error: slice bounds out of range [:6] with capacity 4
+	// s = s[:6]
+
 	// get extra element from array
 	s = s[:4]
 	fmt.Println("\nget extra element from array")
