@@ -1,10 +1,5 @@
 # Learn_Go
 
-
-## Reosources
-
-Go Lang: Overview & download Link: https://golang.org/ 
-
 ### Go Learning Resources
 
 ### [Click Here](GO//resources.md) to view all Go Learning Resources.
