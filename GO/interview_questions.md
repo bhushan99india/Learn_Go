@@ -133,4 +133,98 @@ len(t) = 0, cap(t) = 5
 - **Re-slicing** adjusts the slice's **length**, but **capacity** stays the same unless `append()` increases it.
 - **Nil slices** have a **length of 0** and **capacity of 0**.
 - **Appending** elements can increase **capacity** if needed.
-- **Slice Base Changes:** When slicing, the "base" of the slice is adjusted relative to the underlying array. Further slicing operations use this new base. 
+- **Slice Base Changes:** When slicing, the "base" of the slice is adjusted relative to the underlying array. Further slicing operations use this new base.
+
+```
+map internal implementation
+
+TTL Cache 
+
+memory model golang
+
+exit go routine
+
+channel close
+
+CAP theorem
+
+cap theorem cassandra vs mongodb
+
+https://www.instaclustr.com/blog/cassandra-vs-mongodb/
+
+consistant hashing
+
+service discovery
+
+authorization
+
+JWT parsing
+
+dockerfile, dockercompose
+
+2 phase commit
+
+Saga Pattern
+
+Microservices Saga Pattern
+
+https://www.baeldung.com/cs/saga-pattern-microservices
+
+Fargate Components Task Defination
+Memory cpu  container env command client access via IP addressa and port,
+incase  if any task crash , a new node is going to get spawned 
+This is solved by Service will never go off and never change ip 
+create task then create service for client ot connect to client >> service >> task
+
+
+
+Layers of OSI model
+http vs https
+Datatypes in Golang
+Interface in golang and its use
+consurrency vs parallelism
+goroutine vs thread (java/os) 
+channels buffer, unbuffer
+slice vs array >> cap, len >> append , slice is passed as parameter and then append
+closure
+size of int >> depends on architecture / platform 
+runtime package
+gomaxprocs(number of core)
+gopath and goroot
+find type of variable >> 3 ways fmt.Printf("%T",var) , fmt.Println(reflect.TypeOf(var1) , reflect.ValueOf(var1).Kind())
+m:=make(map[string]interface{})
+rune vs string
+""
+''
+``
+singleton design pattern
+if 2 structs are given compare them >> reflect.DeepEqual() 
+compiletime and runtime in golang
+why are goroutines lightweight stackspace is 2kb(variable) >> 2000kb  , OS thread stackspace is 2MB 2000MB
+defer/ recover/panic
+
+sync package waitgroup, mutex read, write on in memory data lock unlock
+init
+unit testcase go mock mockgen tool
+garbage collection  algorithm (tri color mark sweep algo),go memory model
+how go code compiles static binding
+
+even odd print using go routine alternate
+channels with select with default
+internal implementation of MAP in golang 
+implement queue and stack and linked list in golang
+write rest api using gorilla mux
+2 phase commit, both  saga pattern , circuit breaker service discovery
+
+image >> aws ecr >> aws ecs >> task defination  and the task defination autoscale autoscaling in aws 
+API gateway, zookeeper, loadbalancer , kafka 
+every 1 minute send mem and cpu usage data to cloudwatch , autoscaling >>> 3 strategy >> alarms
+cloudwatch keeps logs of containers
+
+expose container on internet how to do it >> public subnet internetgateway, private subnet and  NAT gateway,
+DNS resolution service discovery
+SOLID principle
+Dependency Injection in Golang
+
+```
+
