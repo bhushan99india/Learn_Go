@@ -187,7 +187,7 @@ elem, ok := m["Bell Labs"]
 If the key is in `m`, `ok` will be `true`. If the key is not in the map, `ok` will be `false`, and `elem` will be the zero value for the map's element type.
 
 ---
-```
+
 ## Function Closures
 
 In Go, **closures** are functions that refer to variables defined outside of their scope. Closures allow you to maintain state between function calls, even after the outer function has returned.
