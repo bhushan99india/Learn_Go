@@ -1,3 +1,9 @@
+## DATA TYPES
+
+![image](https://github.com/user-attachments/assets/d7e72314-eaef-47fc-bd85-72440c5fbbfc)
+
+---
+
 ## Packages
 Every Go program is made up of packages.
 
