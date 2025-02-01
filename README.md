@@ -24,6 +24,19 @@
 9. Changing the elements of a slice modifies the corresponding elements of its underlying array.Other slices that share the same underlying array will see those changes.
 10. The length of a slice is the number of elements it contains.
 11. The capacity of a slice is the number of elements in the underlying array, counting from the first element in the slice.
+12. channel, close channel
+13. wait groups
+14. buffered channel:- need to wait  for receiver
+15. we can you range on unbuffered channel also. but channel closing is important to avoid panic
+16. if channel is already close and try to range, nothing will happened.
+17. len and cap function works on channel
+18. select keyword used when you have multiple channel and you want to get data from who is come first.
+19. infinite for loop and select can be use together where continuously data coming in multiple goroutines
+20. GOTO allows for an unconditional jump to another part of the program, typically to a labeled statement
+21. single character (e.g., 'b') to its ASCII value (which is an integer), you need to work with a rune (which is Go's representation for Unicode characters) rather than a string.
+22. In Go, single quotes are for characters (a rune), and double quotes are for strings.
+
+
 
 
 
